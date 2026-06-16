@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.email {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.hidden {
+    display: none;
+}
+
+#awareness {
+    margin-top: 20px;
+    background: #fff3cd;
+    padding: 15px;
+    border-left: 5px solid orange;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#clickCounter {
+    font-size: 35px;
+    color: #2563eb;
+    font-weight: bold;
+}
