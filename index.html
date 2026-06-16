@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Phishing Awareness Simulator</h1>
+    <p>Cybersecurity Training Platform</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Simulated Phishing Email</h2>
+
+        <div class="email">
+            <p><strong>From:</strong> security-update@bank-alert.com</p>
+            <p><strong>Subject:</strong> Urgent Account Verification</p>
+
+            <hr>
+
+            <p>
+                Dear User,
+                <br><br>
+                Your account will be suspended within 24 hours.
+                Click the button below to verify your account.
+            </p>
+
+            <button onclick="showAwareness()">
+                Verify Account
+            </button>
+        </div>
+
+        <div id="awareness" class="hidden">
+            <h3>⚠ Phishing Simulation Detected</h3>
+
+            <ul>
+                <li>Urgent language used.</li>
+                <li>Unknown sender address.</li>
+                <li>Requests sensitive information.</li>
+                <li>Suspicious links.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Phishing Awareness Quiz</h2>
+
+        <p>1. Which is a phishing indicator?</p>
+
+        <input type="radio" name="q1" value="1"> Urgent password request
+        <br>
+        <input type="radio" name="q1" value="0"> Monthly newsletter
+
+        <br><br>
+
+        <p>2. What should you do before clicking a link?</p>
+
+        <input type="radio" name="q2" value="1"> Check the URL
+        <br>
+        <input type="radio" name="q2" value="0"> Click immediately
+
+        <br><br>
+
+        <p>3. Phishing emails often create:</p>
+
+        <input type="radio" name="q3" value="1"> Urgency
+        <br>
+        <input type="radio" name="q3" value="0"> Transparency
+
+        <br><br>
+
+        <button onclick="calculateScore()">
+            Submit Quiz
+        </button>
+
+        <div id="score"></div>
+    </div>
+
+    <div class="card">
+        <h2>Statistics</h2>
+        <h3>Total Phishing Link Clicks</h3>
+        <p id="clickCounter">0</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
